@@ -53,7 +53,7 @@ img{
     font-family: var(--font-family);
     font-size: 1.8rem;
     font-weight: 700;
-    width: 150px;
+    
     position: relative;
 }
 .title-text::before{
@@ -205,5 +205,33 @@ a.skill-btn{
    font-weight: 500;
 }
 
+/* =================
+recent-work style
+=================== */
+#project{
+    /* height: 50vh; */
+    margin-top: 50px;
+}
+.recent-work{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.card {
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+}
+.card-img{
+    /* overflow: hidden; */
+   
+} 
+.card-img img{
+    border: 8px var(--white-alpha-40) solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
 
 
