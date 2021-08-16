@@ -1,0 +1,209 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap'); */
+
+/* ==================
+ Variables
+==================== */
+:root{
+    --main-color: #e02f6b;
+    --blue: #0000ff;
+    --blue-dark: #18293c;
+    --orange: #ffa500;
+    --green-yellow: #cddc39;
+    --pink-light: #efa2b4;
+    --cyan-light: #aef1ee;
+    --white: #ffffff;
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --backdrop-filter-blur: blur(5px);
+    --font-family:'Montserrat', sans-serif; ;
+}
+/*=================
+ common style 
+================== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+h1,h2{
+    font-weight: 700;
+}
+h3,h4,h5{
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.mr{
+    margin-right: 20px;
+}
+.d-flex{
+    display: flex;
+}
+
+/* ===============
+ title text style 
+================ */
+.title-text{
+    font-family: var(--font-family);
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 150px;
+    position: relative;
+}
+.title-text::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background: var(--main-color);
+    bottom: 0;
+    transition: width 0.5s;
+}
+.title-text:hover::before{
+    width: 100%;
+}
+/* ===============
+ button style 
+================ */
+.btn, .skill-btn{
+    color: var(--main-color);
+    background: var(--white-alpha-25);
+    padding: 8px 25px;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.btn::before{
+    content:'';
+    position: absolute; 
+    background: var(--main-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height:100%;
+    z-index: -1;
+   transition: width 0.5s;
+}
+.btn:hover::before{
+    width: 100%;
+    
+}
+.btn:hover{
+    color:var(--white);
+    
+}
+/*=================
+ body style 
+ ================== */
+ body{
+     background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+     min-height: 100vh;
+     font-size: 16px;
+     color: var(--blue-dark);
+     line-height: 1.5;
+ }
+ /*===============
+  main style 
+ ================= */
+ main{
+    width: 90%;
+    background-color: var(--white-alpha-25);
+    border: 1px var(--white-alpha-40) solid;
+    border-radius: 30px;
+    margin: 20px auto;
+    
+}
+
+ /* =================
+container style
+==================== */
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*==========================
+ home section styles 
+=========================== */
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.text-area{
+
+}
+.text-area h1{
+    font-size: 2.5rem;
+}
+.text-area h3{
+    font-size: 1.5rem;
+}
+
+.img-area{
+    width: 350px;
+    background-color: white;
+    height: 350px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+/*==========================
+ about section styles 
+=========================== */
+#about {
+    /* min-height: 60vh; */
+    padding: 20px;
+}
+.about {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.about-img-area {
+    height: 400px;
+    width: 40%;
+    background-color: var(--white-alpha-25);
+    border: 1px var(--white-alpha-40) solid;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.about-text-area {
+    width: 60%;
+}
+h3.skill-text{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+    position: relative;
+    
+}
+h3.skill-text::before{
+content: '';
+width: 100%;
+height: 2px;
+background-color: var(--main-color);
+position: absolute;
+bottom: 0;
+}
+a.skill-btn{
+   padding-top: 2.5px;
+   padding-bottom: 2.5px;
+   color: var(--blue-dark);
+   font-weight: 500;
+}
+
+
+
