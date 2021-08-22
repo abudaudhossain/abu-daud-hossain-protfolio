@@ -313,10 +313,6 @@ recent-work style
     width : 100%;
 }
 
-.card-img {
-    /* overflow: hidden; */
-
-}
 
 .card-img img {
     border       : 8px var(--white-alpha-40) solid;
