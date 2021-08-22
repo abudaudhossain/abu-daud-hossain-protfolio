@@ -55,7 +55,9 @@ img {
 .mb {
     margin-bottom: 20px;
 }
-
+.mt{
+    margin-top: 50px;
+}
 .d-flex {
     display: flex;
 }
@@ -123,7 +125,9 @@ img {
     color: var(--white);
 
 }
-
+.active{
+    color: var(--blue);
+}
 /*=================
  body style 
  ================== */
@@ -215,13 +219,15 @@ container style
 /*==========================
  home section styles 
 =========================== */
-.home {
+.about-home, .home {
     display        : flex;
     justify-content: space-between;
-    align-items    : center;
-    height         : 100vh;
+    min-height         : 80vh;
+    box-sizing: border-box;
 }
-
+.home{
+    align-items    : center;
+}
 .text-area {}
 
 .text-area h1 {
