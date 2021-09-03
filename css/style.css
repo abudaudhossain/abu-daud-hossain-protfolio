@@ -228,7 +228,7 @@ container style
 .home{
     align-items    : center;
 }
-.text-area {}
+/* .text-area {} */
 
 .text-area h1 {
     font-size: 2.5rem;
@@ -385,9 +385,7 @@ textarea:focus {
     border: none !important;
 
 }
-.button{
-    background: red;
-}
+
 /*==============
  footer style
  ============ */
