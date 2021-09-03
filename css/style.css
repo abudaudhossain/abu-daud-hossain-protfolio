@@ -385,7 +385,9 @@ textarea:focus {
     border: none !important;
 
 }
-
+.button{
+    background: red;
+}
 /*==============
  footer style
  ============ */
@@ -394,3 +396,22 @@ footer {
     padding-top   : 15px;
     padding-bottom: 15px;
 }
+
+
+/* ==============================
+ project details style strat
+=========================== */
+#detials{
+    width: 80%;
+    margin: auto;
+}
+.facher{
+  
+    /* margin-left: 20px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* ==============================
+ project details style end
+=========================== */
